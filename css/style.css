@@ -10,7 +10,7 @@ html {
 
 body {
     color: #111;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
     font-weight: 300;
     margin: 0;
 }
@@ -36,7 +36,7 @@ h2 {
 }
 
 .header {
-    background: #4caf50;
+    background: navy;
     color: #fff;
     position: fixed;
     top: 0;
