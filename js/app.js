@@ -7,31 +7,19 @@
  */
 
 // The names and URLs to all of the feeds we'd like available.
-var allFeeds = [
-    // {
-    //     name: 'Navy Times'                                                      // From MilitaryTimes.com
-    //     url: 'http://feeds.feedburner.com/navy-times/news/your-navy'
-    // }, {
-    //     name: 'Veterans'                                                        // From MilitaryTimes.com
-    //     url: 'http://feeds.feedburner.com/military-times/veterans'
-    // }, {
-    //     name: 'Military Spouse & Family RSS'                                    // From Military.com
-    //     url: 'https://www.military.com/rss-feeds/content?channel=spouse+and+family&type=evergreen,news'
-    // }, {
-    //     name: 'Education & Transition'                                          // From MilitaryTimes.com
-    //     url: 'http://feeds.feedburner.com/military-times/education-transition'
-    // }, {
-        name: 'Udacity Blog',
-        url: 'http://blog.udacity.com/feed'
+var allFeeds = [                                                                // WORKS!  with new links.
+    {
+        name: 'Navy Times',                                                     // From MilitaryTimes.com
+        url: 'http://feeds.feedburner.com/navy-times/news/your-navy'
     }, {
-        name: 'CSS Tricks',
-        url: 'http://feeds.feedburner.com/CssTricks'
+        name: 'Veterans',                                                       // From MilitaryTimes.com
+        url: 'http://feeds.feedburner.com/military-times/veterans'
     }, {
-        name: 'HTML5 Rocks',
-        url: 'http://feeds.feedburner.com/html5rocks'
+        name: 'Military Spouse & Family RSS',                                   // From Military.com
+        url: 'https://www.military.com/rss-feeds/content?channel=spouse+and+family&type=evergreen,news'
     }, {
-        name: 'Linear Digressions',
-        url: 'http://feeds.feedburner.com/udacity-linear-digressions'
+        name: 'Education & Transition',                                         // From MilitaryTimes.com
+        url: 'http://feeds.feedburner.com/military-times/education-transition'
     }
 ];
 
