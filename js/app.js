@@ -65,7 +65,7 @@ function init() {
                   * entryTemplate (created above using Handlebars) and append
                   * the resulting HTML to the list of entries on the page.
                   */
-                 entries.forEach(function(entry) {
+                 entries.forEach(entry => {
                      container.append(entryTemplate(entry));
                  });
 
@@ -92,7 +92,7 @@ google.setOnLoadCallback(init);
  * place our code in the $() function to ensure it doesn't execute
  * until the DOM is ready.
  */
-$(function() {
+$((() => {
     var container = $('.feed'),
         feedList = $('.feed-list'),
         feedItemTemplate = Handlebars.compile($('.tpl-feed-list-item').html()),
@@ -105,7 +105,7 @@ $(function() {
      * above using Handlebars) and append it to the list of all
      * available feeds within the menu.
      */
-    allFeeds.forEach(function(feed) {
+    allFeeds.forEach(feed => {
         feed.id = feedId;
         feedList.append(feedItemTemplate(feed));
 
@@ -127,7 +127,7 @@ $(function() {
     /* When the menu icon is clicked on, we need to toggle a class
      * on the body to perform the hiding/showing of our menu.
      */
-    menuIcon.on('click', function() {
+    menuIcon.on('click', () => {
         $('body').toggleClass('menu-hidden');
     });
-}());
+})());
