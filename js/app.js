@@ -15,10 +15,10 @@ var allFeeds = [
         name: 'Veterans',                                                        // From MilitaryTimes.com
         url: 'http://feeds.feedburner.com/military-times/veterans'
     }, {
-        name: 'Military Spouse & Family RSS',                                    // From Military.com
+        name: 'Military Family',                                    // From Military.com
         url: 'https://www.military.com/rss-feeds/content?channel=spouse+and+family&type=evergreen,news'
     }, {
-        name: 'Education & Transition',                                          // From MilitaryTimes.com
+        name: 'Transition',                                          // From MilitaryTimes.com
         url: 'http://feeds.feedburner.com/military-times/education-transition'
     }, {
         name: 'Udacity Blog',
