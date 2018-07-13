@@ -47,7 +47,10 @@ $(function() {
          * and that the name is not empty.
          */
     });
+}());
 
+
+$(function() {
     describe('The menu', function() {
 
       it('is hidden', function() {
@@ -75,6 +78,10 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
+}());
+
+
+$(function() {
   describe('Initial Entries', function() {
 
     it('status of .feed', function() {
@@ -92,7 +99,11 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+}());
 
+
+
+$(function() {
   describe('New Feed Selection', function() {
 
     it('verify content is new', function() {
