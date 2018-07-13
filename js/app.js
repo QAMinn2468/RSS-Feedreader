@@ -8,19 +8,19 @@
 
 // The names and URLs to all of the feeds we'd like available.
 var allFeeds = [
-    // {
-    //     name: 'Navy Times'                                                      // From MilitaryTimes.com
-    //     url: 'http://feeds.feedburner.com/navy-times/news/your-navy'
-    // }, {
-    //     name: 'Veterans'                                                        // From MilitaryTimes.com
-    //     url: 'http://feeds.feedburner.com/military-times/veterans'
-    // }, {
-    //     name: 'Military Spouse & Family RSS'                                    // From Military.com
-    //     url: 'https://www.military.com/rss-feeds/content?channel=spouse+and+family&type=evergreen,news'
-    // }, {
-    //     name: 'Education & Transition'                                          // From MilitaryTimes.com
-    //     url: 'http://feeds.feedburner.com/military-times/education-transition'
-    // }, {
+    {
+        name: 'Navy Times',                                                    // From MilitaryTimes.com
+        url: 'http://feeds.feedburner.com/navy-times/news/your-navy'
+    }, {
+        name: 'Veterans',                                                        // From MilitaryTimes.com
+        url: 'http://feeds.feedburner.com/military-times/veterans'
+    }, {
+        name: 'Military Spouse & Family RSS',                                    // From Military.com
+        url: 'https://www.military.com/rss-feeds/content?channel=spouse+and+family&type=evergreen,news'
+    }, {
+        name: 'Education & Transition',                                          // From MilitaryTimes.com
+        url: 'http://feeds.feedburner.com/military-times/education-transition'
+    }, {
         name: 'Udacity Blog',
         url: 'http://blog.udacity.com/feed'
     }, {
