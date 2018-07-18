@@ -26,14 +26,10 @@ var allFeeds = [
     }, {
         name: 'CSS Tricks',
         url: 'http://feeds.feedburner.com/CssTricks'
-    }, {
-        name: 'HTML5 Rocks',
-        url: 'http://feeds.feedburner.com/html5rocks'
-    }, {
-        name: 'Linear Digressions',
-        url: 'http://feeds.feedburner.com/udacity-linear-digressions'
     }
 ];
+
+const body = document.querySelector('body');                         // Better?
 
 /* This function starts up our application. The Google Feed
  * Reader API is loaded asynchonously and will then call this
@@ -53,8 +49,10 @@ function init() {
  * which will be called after everything has run successfully.
  */
  function loadFeed(id, cb) {
-     var feedUrl = allFeeds[id].url,
+     const feedUrl = allFeeds[id].url,
          feedName = allFeeds[id].name;
+
+
 
      $.ajax({
        type: "POST",
