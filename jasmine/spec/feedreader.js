@@ -2,40 +2,23 @@
 $(function() {
 
     describe('RSS Feeds', function() {                                          //correct.
-        /* This is our first test - it tests to make sure that the
-         * allFeeds variable has been defined and that it is not
-         * empty. Experiment with this before you get started on
-         * the rest of this project. What happens when you change
-         * allFeeds in app.js to be an empty array and refresh the
-         * page?
-         */
+
         it('are defined', function() {
             expect(allFeeds).toBeDefined();                                     // Passes
             expect(allFeeds.length).not.toBe(0);                                // Passes
         });
 
-        // it('URL is defined', function() {                         //is called.
-        //
-        //     // expect(allFeeds.forEach.url).toBe(true);
-        //
-        // });
+        it('URL is defined', function() {                                       // correct.
+          for(i=0; i<allFeeds.length; i++) {
+            expect(allFeeds[i].url).not.toBe('');                               // correct!
+        };
+        });
 
-        // it('name is defined', function() {                          // is called.
-        //     expect(allFeeds.name).toBe(true);
-        // });
-        //
-
-
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a URL defined
-         * and that the URL is not empty.
-         */
-
-
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a name defined
-         * and that the name is not empty.
-         */
+        it('name is defined', function() {                                      // correct.
+        for(i=0; i<allFeeds.length; i++) {
+            expect(allFeeds[i].name).not.toBe('');                              // correct!
+        };
+        });
     });
 }());
 
@@ -43,16 +26,16 @@ $(function() {
 // $(function() {
 //     describe('The menu', function() {                                           // correct.
 //
-//       it('is hidden', function() {                                              // This function is called. "The body is not defined"
+//       it('is hidden', function() {                                              // correct.
 //
-//       //   expect(body).hasClass('menu-hidden');  //looks right, but isn't.
+//         expect(body).hasClass('menu-hidden');  //not a function
 //       });
 //
-//       it('changes when clicked', function() {                                   // This function is called. "The body is not defined"
-//       //
-//       //   expect(body.menu-hidden).toBe('onClick');
-//       //   expect(body.menu-hidden).not.toBe('doubleclick');
-//       // });
+//       it('changes when clicked', function() {                                   // correct.
+//
+//         expect(body.menu-hidden).toBe('onClick');  //"hidden is not defined"
+//         expect(body.menu-hidden).not.toBe('doubleclick');
+//       });
 //     });
 //
 //         /* TODO: Write a test that ensures the menu element is
@@ -69,33 +52,33 @@ $(function() {
 // }());
 
 
-// $(function() {
-//   describe('Initial Entries', function() {                                      // correct.
-//
-//     it('status of .feed', function() {                                          // correct.
-//
-//       expect(loadFeed).not.toBe(true);                                          // Passes.
-//       // expect(.feed).toBe(true);
-//
-//     });
-//   });
-//
-//         /* TODO: Write a test that ensures when the loadFeed
-//          * function is called and completes its work, there is at least
-//          * a single .entry element within the .feed container.
-//          * Remember, loadFeed() is asynchronous so this test will require
-//          * the use of Jasmine's beforeEach and asynchronous done() function.
-//          */
-// }());
+$(function() {
+  describe('Initial Entries', function() {                                      // correct.
+
+    it('status of .feed', function() {                                          // correct.
+
+      expect(loadFeed).not.toBe(true);                                          // Passes.
+      // expect(feed).toBe(true);  //feed not defined.
+
+    });
+  });
+
+        /* TODO: Write a test that ensures when the loadFeed
+         * function is called and completes its work, there is at least
+         * a single .entry element within the .feed container.
+         * Remember, loadFeed() is asynchronous so this test will require
+         * the use of Jasmine's beforeEach and asynchronous done() function.
+         */
+}());
 
 
 
 // $(function() {
-//   describe('New Feed Selection', function() {                                   // correct
+//   describe('New Feed Selection', function() {                                   // correct.
 //
-//     it('verify content is new', function() {      //unclear, needs rule.
+//     it('verify content is new', function() {                                    // correct.
 //
-//       // expect(newFeed).not.toBe(oldFeed);
+//       expect(newFeed).not.toBe(oldFeed);  //newFeed is not defined, oldfeed is not defined.
 //     });
 //   });
 //
