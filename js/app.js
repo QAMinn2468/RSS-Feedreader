@@ -30,6 +30,9 @@ var allFeeds = [
 ];
 
 const body = document.querySelector('body');                         // Better?
+const feed = document.querySelector('.feed');
+let feedList = $('.feed-list');
+
 
 /* This function starts up our application. The Google Feed
  * Reader API is loaded asynchonously and will then call this
@@ -117,7 +120,7 @@ $(function() {
      */
     allFeeds.forEach(function(feed) {
         feed.id = feedId;
-        feedList.append(feedItemTemplate(feed));
+        feedNew = feedList.append(feedItemTemplate(feed));
 
         feedId++;
     });
