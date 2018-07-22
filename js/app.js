@@ -20,18 +20,14 @@ var allFeeds = [
     }, {
         name: 'Transition',                                          // From MilitaryTimes.com
         url: 'http://feeds.feedburner.com/military-times/education-transition'
-    }, {
-        name: 'Udacity Blog',
-        url: 'http://blog.udacity.com/feed'
-    }, {
-        name: 'CSS Tricks',
-        url: 'http://feeds.feedburner.com/CssTricks'
     }
 ];
 
 const body = document.querySelector('body');                         // Better?
 const feed = document.querySelector('.feed');
 let feedList = $('.feed-list');
+
+
 
 
 /* This function starts up our application. The Google Feed

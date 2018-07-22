@@ -23,33 +23,33 @@ $(function() {
 }());                                                                           //  Suite 1 complete!
 
 
-// $(function() {
-//     describe('The menu', function() {                                           // correct.
-//
-//       it('is hidden', function() {                                              // correct.
-//
-//         expect(body.hasClass('menu-hidden')).toBe(true);  //not a function   .slide-menu  update Jasmine version to 3.0
-//       });
-//
-// //       it('changes when clicked', function() {                                   // correct.
-// //
-// //         expect(body.menu-hidden).toBe('onClick');  //"hidden is not defined"
-// //         expect(body.menu-hidden).not.toBe('doubleclick');
-// //       });
-//     });
-// //
-// //         /* TODO: Write a test that ensures the menu element is
-// //          * hidden by default. You'll have to analyze the HTML and
-// //          * the CSS to determine how we're performing the
-// //          * hiding/showing of the menu element.
-// //          */
-// //
-// //          /* TODO: Write a test that ensures the menu changes
-// //           * visibility when the menu icon is clicked. This test
-// //           * should have two expectations: does the menu display when
-// //           * clicked and does it hide when clicked again.
-// //           */
-// }());
+$(function() {
+    describe('The menu', function() {                                           // correct.
+
+      it('is hidden', function() {                                              // correct.
+
+        expect(document.body.getElementsByClassName('menu-hidden')). not.toBe('');  //WORKS!
+      });
+
+      it('changes when clicked', function() {                                   // correct.
+
+        expect(document.body.getElementsByClassName('menu-hidden')).not.toBe('');  //"hidden is not defined"
+        expect(document.body.getElementsByClassName('menu-hidden')).toBe('');
+      });
+    });
+
+        /* TODO: Write a test that e
+         * hidden by default. You'll have to analyze the HTML and
+         * the CSS to determine how we're performing the
+         * hiding/showing of the menu element.
+         */
+
+         /* TODO: Write a test that ensures the menu changes
+          * visibility when the menu icon is clicked. This test
+          * should have two expectations: does the menu display when
+          * clicked and does it hide when clicked again.
+          */
+}());
 
 
 // $(function() {
@@ -80,18 +80,14 @@ $(function() {
       expect(feedList).not.toBe(feedNew);                                       // Passes! New feed does not match old feed.
     });
 
-    it('verify each entry is unique', function() {
-
-      // expect(entries).not.contains(entry);
-    })
+    // it('verify each entry is unique', function() {                              // correct
+    //
+    //   expect(entry).not.equals(entry);
+    // })
   });
 
-          /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
 
-          /* TODO:  verify each .entry-link is unique. - MINE
-          */
+          // /* TODO:  verify each .entry-link is unique. - MINE
+          // */
 
 }());
