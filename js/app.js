@@ -25,6 +25,7 @@ var allFeeds = [
 
 const body = document.querySelector('body');                         // Better?
 const feed = document.querySelector('.feed');
+const menu = document.querySelector('.menu-icon-link');
 let feedList = $('.feed-list');
 
 

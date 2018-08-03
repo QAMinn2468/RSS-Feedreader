@@ -26,7 +26,7 @@
       expect(menuHidden).toBe(true);
     });
 
-    it('menu icon changes menuHidden', function() {
+    it('menu icon changes menu-hidden', function() {
       expect(menuHidden:before).not.toBe(menuHidden:after);
     });
   });

@@ -33,23 +33,14 @@ $(function() {
         expect($('body').hasClass('menu-hidden')).toBe(true);                   // Works!
       });
 
-      it('changes when clicked', function() {                                   // correct.
-        // const root = document.querySelector('body');
-        // root.onClick()                                                  // click - class Menu-hidden is removed.
-        // expect($('body').hasClass('menu-hidden')).toBe(false);  // TODO: tweak root variable. this will fix both click tests.
-        //
-        // root.onClick();                                                  // second click - class Menu-hidden is returned.
+      it('menu icon changes menu-hidden', function() {                          // correct.
+        menu.click();                                                           // click - class Menu-hidden is removed.
+        expect($('body').hasClass('menu-hidden')).toBe(false);
+        menu.click();                                                           // second click - class Menu-hidden is returned.
         expect($('body').hasClass('menu-hidden')).toBe(true);
       });
     });
-
-
-         /* TODO: Write a test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
-          */
-}());
+}());                                                                           // Suite 2 complete!
 
 
 $(function() {
