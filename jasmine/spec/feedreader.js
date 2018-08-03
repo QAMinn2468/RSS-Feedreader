@@ -46,19 +46,15 @@ $(function() {
 $(function() {
   describe('Initial Entries', function() {                                      // correct.
 
-    it('status of feed', function() {                                          // correct.
-      expect($('feed').length).not.toBe(0);
+    beforeEach(function loadFeed(done) {
+      done();
+    });
 
+    it('status of feed', function() {                                           // correct.
+      expect($('feed.entry')).not.toBe(0);
     });
   });
-
-        /* TODO: Write a test that ensures when the loadFeed
-         * function is called and completes its work, there is at least
-         * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test will require
-         * the use of Jasmine's beforeEach and asynchronous done() function.
-         */
-}());
+}());                                                                           // Suite 3 complete!
 
 
 
