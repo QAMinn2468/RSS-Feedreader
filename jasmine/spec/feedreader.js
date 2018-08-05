@@ -60,25 +60,21 @@ $(function() {
 
 $(function() {
   describe('New Feed Selection', function() {                                   // correct.
-    let load1 ;                                                                 // declare variable load1
-    beforeEach(function loadFeed(done) {                                        // fill variable with content.
-      done();
-      load1 = this;
-    });
+    beforeEach(function(done) {
+      load1 = loadFeed();
+      loadFeed(0);
 
-    let load2;                                                                  // declare variable
-    beforeEach(function loadFeed(done) {
-      done();                                                                   // fill variable with content.
-      load2 = this;
-    });
+      load2 = loadFeed();
+      loadFeed(1);
+      });
 
-    it('verify content is new', function() {                                    // correct.
+    it('verify content is new', function(done) {                                    // correct.
       expect(load1 === load2).toBe(false);                                      // verify old feed is not equal to new feed.
+      done();                                                                   // inspired by chapter 22-18 'Async Address book'
     });
 
-    it('verify each entry is unique', function() {                              // correct
-      for (i = 0 , i < feed.length, i++) {                                      // iterate through the array, verify all entries are unique.
-      expect(feed.entry[i] !=== feed.entry[i+1]).toBe(true);
-    }})
-  });
-}());
+    // it('verify each entry is unique', function() {             // TODO:                  // correct  remove "x" when ready to run.
+    //   for (i = 0 , i < feed.length, i++) {                                      // iterate through the array, verify all entries are unique.
+    //   expect(feed.id[i] !=== feed.id[i+1]).toBe(true);
+    // }})
+})}());
