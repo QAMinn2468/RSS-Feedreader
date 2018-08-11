@@ -54,27 +54,37 @@ $(function() {
       expect($('feed.entry')).not.toBe(0);                                      // array of feed entries should not be empty.
     });
   });
-}());                                                                           // Suite 3 complete!
+                                                                        // Suite 3 complete!
 
 
 
 $(function() {
-  describe('New Feed Selection', function() {                                   // correct.
-    beforeEach(function(done) {
-      load1 = loadFeed();
-      loadFeed(0);
+  const loadA = [];
+  const loadB = [];
+  const fE = feed.entry;
+  describe('New Feed Selection', () =>
 
-      load2 = loadFeed();
-      loadFeed(1);
-      });
 
-    it('verify content is new', function(done) {                                    // correct.
-      expect(load1 === load2).toBe(false);                                      // verify old feed is not equal to new feed.
+    beforeEach(done =>
+
+      loadFeed(2);
+      Array from(fE).forEach(entry =>
+      loadA.push(entry.innerText);
+      console.log('Suite 4 before Each'));
+
+      loadFeed(3, done);
+      Array from(fE).forEach(entry =>
+      loadB.push(entry.innerText));
+      );
+
+    it('verify content is new', done =>
+      expect(loadA === loadB).toBe(false);                                      // verify old feed is not equal to new feed.
       done();                                                                   // inspired by chapter 22-18 'Async Address book'
-    });
+    );
 
     // it('verify each entry is unique', function() {             // TODO:                  // correct  remove "x" when ready to run.
     //   for (i = 0 , i < feed.length, i++) {                                      // iterate through the array, verify all entries are unique.
     //   expect(feed.id[i] !=== feed.id[i+1]).toBe(true);
-    // }})
-})}());
+    //
+
+}());
