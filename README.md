@@ -29,24 +29,32 @@ The choices of article topics are:
 
 ### Overview of Test Suites used
 
-<ul>
-<li> **Suite 1 - RSS Feeds** </li>
+
+ **Suite 1 - RSS Feeds**
+ <ul>
 <li>     test 1 - are defined</li>
 <li>     test 2 - URL is defined</li>
 <li>     test 3 - name is defined</li>
+</ul>
 </br>
-<li> **Suite 2 - The Menu** </li>
+**Suite 2 - The Menu**
+<ul>
 <li>     test 1 - is hidden</li>
 <li>     test 2 - menu icon changes menu-hidden</li>
-</br>
-<li> **Suite 3 - Initial Entries** </li>
-<li>     test 1 - status of feed</li>
-</br>
-<li> **Suite 4 - New Feed Selection** </li>
-<li>     test 1 - verify content is new</li>
-</br>
-<li>** I considered adding a test to verify each entry was unique (I had had one load where there was a duplicate entry).  I intended to loop through the feed array, checking each pair of entries to verify the pair did not match.</li>
 </ul>
+</br>
+**Suite 3 - Initial Entries**
+<ul>
+<li>     test 1 - status of feed</li>
+</ul>
+</br>
+**Suite 4 - New Feed Selection**
+<ul>
+<li>     test 1 - verify content is new</li>
+</ul>
+</br>
+** I considered adding a test to verify each entry was unique (I had had one load where there was a duplicate entry).  I intended to loop through the feed array, checking each pair of entries to verify the pair did not match.
+
 
 
 
@@ -65,4 +73,4 @@ I reviewed documentation by Jasmine, MND, W3schools, Stack Overflow, and Matthew
 
 Enjoy! </br>
 **KMcC**
-August 2018
+</br>August 2018
