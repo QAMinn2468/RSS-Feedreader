@@ -62,35 +62,34 @@ $(function() {
   let loadA = [];
   let loadB = [];
 
-  describe('New Feed Selection', () =>{
+  describe('New Feed Selection', () => {
 
 
     beforeEach(done => {                                                        // Works - don't touch!!
       let fE = feed.children;                                                 // Works don't touch!
 
-
-      loadFeed(2);
+      loadFeed(1);
       console.log(fE);                                                          // Works!  length is 25 for all 4 feeds.  Checked each individually.
-      loadA = fE;
+      // loadA = fE;
 
-      // Array.from(fE).forEach(entry =>
-      // loadA.push(entry.textContent));
+      Array.from(fE).forEach(entry =>
+      loadA.push(entry.textContent));
 
       loadFeed(3, done);
-      loadB = fE;
+      // loadB = fE;
 
-      // Array.from(fE).forEach(entry =>
-      // loadB.push(entry.innerText));
+      Array.from(fE).forEach(entry =>
+      loadB.push(entry.textContent));
       });
 
-    it('verify content is new', done =>
-      done();
+    it('verify content is new', () =>
+
       expect(loadA === loadB).toBe(false));                                      // verify old feed is not equal to new feed.
-    });
+
 
     // it('verify each entry is unique', function() {             // TODO:
     //   for (i = 0 , i < feed.length, i++) {                                      // iterate through the array, verify all entries are unique.
     //   expect(feed.id[i] === feed.id[i+1]).toBe(false);
     //
-
+    });
 }());
