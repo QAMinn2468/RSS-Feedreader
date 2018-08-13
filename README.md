@@ -22,27 +22,27 @@ The choices of article topics are:
 ### Options
 
 <ul>
-<li>**Click** to open the article in the current window.</li>
-<li>**Right click** to open the article into a new window.  This allows the feed to remain accessible.</li>
+<li>__Click__ to open the article in the current window.</li>
+<li>__Right click__ to open the article into a new window.  This allows the feed to remain accessible.</li>
 </ul>
 
 
 ### Overview of Test Suites used
 
-<ul text-decoration: none>
-<li>**Suite 1 - RSS Feeds**</li>
+<ul>
+<li>__Suite 1 - RSS Feeds__</li>
 <li>     test 1 - are defined</li>
 <li>     test 2 - URL is defined</li>
 <li>     test 3 - name is defined</li>
 </br>
-<li>**Suite 2 - The Menu**</li>
+<li>__Suite 2 - The Menu__</li>
 <li>     test 1 - is hidden</li>
 <li>     test 2 - menu icon changes menu-hidden</li>
 </br>
-<li>**Suite 3 - Initial Entries**</li>
+<li>__Suite 3 - Initial Entries__</li>
 <li>     test 1 - status of feed</li>
 </br>
-<li>**Suite 4 - New Feed Selection**</li>
+<li>__Suite 4 - New Feed Selection__</li>
 <li>     test 1 - verify content is new</li>
 </br>
 <li>** I considered adding a test to verify each entry was unique (I had had one load where there was a duplicate entry).  I intended to loop through the feed array, checking each pair of entries to verify the pair did not match.</li>
