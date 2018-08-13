@@ -37,17 +37,20 @@ The choices of article topics are:
 <li>     test 3 - name is defined</li>
 </ul>
 </br>
+
 **Suite 2 - The Menu**
 <ul>
 <li>     test 1 - is hidden</li>
 <li>     test 2 - menu icon changes menu-hidden</li>
 </ul>
 </br>
+
 **Suite 3 - Initial Entries**
 <ul>
 <li>     test 1 - status of feed</li>
 </ul>
 </br>
+
 **Suite 4 - New Feed Selection**
 <ul>
 <li>     test 1 - verify content is new</li>
@@ -61,11 +64,13 @@ The choices of article topics are:
 
 ### Ideas for Others
 
--Change the RSS feeds to those you would enjoy. To do this, go to the JS folder, open app.js, and edit the allFeeds array (line 10). Additions and deletions are also possible.
+-Change the RSS feeds to those you would enjoy. To do this, go to the JS folder, open app.js, and edit the allFeeds array (line 10). Consider adding feeds and deleting feeds as well.
 
 
 
 ### Footnotes
+
+If you find any typos, please contact me at Kimberly.M.McCaffrey@gmail.com .
 
 This is the fourth project for the Grow with Google Scholarship of the Udacity Front-End Development Nanodegree.  
 
