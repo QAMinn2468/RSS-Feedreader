@@ -1,8 +1,9 @@
 
 # Welcome!
 
+Premise: The developer that had been working on this code has been promoted. I am now responsible for this project.
 
-In order to run this application, you will need to go to https://qaminn2468.github.io/frontend-nanodegree-feedreader/ .  (if it does not load correctly, click on the shield with the red X on the right near the search bar.) Verify site has loaded correctly. Click 'download'.  Click 'download zip'.  Choose where you would like the file to reside. (In this example, we will use the Chrome browser.) Open Chrome.  Press CTRL-O.  Choose index.html from within the downloaded folder.  The page will load.  It will display articles from the Navy Times.  To choose a different feed, click the hamburger icon.  To view the test suite results, scroll to the bottom of the page.
+In order to run this application, you will need to go to https://qaminn2468.github.io/frontend-nanodegree-feedreader/ (or download from Github).  (if it does not load correctly, click on the shield with the red X on the right near the search bar.) Verify site has loaded correctly. Click 'download'.  Click 'download zip'.  Choose where you would like the file to reside. (In this example, we will use the Chrome browser.) Open Chrome.  Press CTRL-O.  Choose index.html from within the downloaded folder.  The page will load.  It will display articles from the Navy Times.  To choose a different feed, click the hamburger icon.  To view the test suite results, scroll to the bottom of the page.
 
 
 
