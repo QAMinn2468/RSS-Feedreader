@@ -74,7 +74,7 @@ If you find any typos, please contact me at Kimberly.M.McCaffrey@gmail.com .
 
 This is the fourth project for the Grow with Google Scholarship of the Udacity Front-End Development Nanodegree.  
 
-I reviewed documentation by Jasmine, MND, W3schools, Stack Overflow, and Matthew Cranford (https://matthewcranford.com/feed-reader-walkthrough-part-3-menu-test-suite/ and https://matthewcranford.com/feed-reader-walkthrough-part-4-async-tests/).
+I reviewed documentation by Jasmine, MND, W3schools, Stack Overflow, and Matthew Cranford (https://matthewcranford.com/feed-reader-walkthrough-part-3-menu-test-suite/ and https://matthewcranford.com/feed-reader-walkthrough-part-4-async-tests/).  In addition, I consulted "JavaScript & jQuery: interactive front-end web development" by Jon Duckett (2014).
 
 Enjoy! </br>
 **KMcC**
