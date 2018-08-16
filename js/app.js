@@ -9,23 +9,22 @@
 // The names and URLs to all of the feeds we'd like available.
 var allFeeds = [
     {
-        name: 'Navy Times',                                                    // From MilitaryTimes.com
+        name: 'Navy Times',                                                     // From MilitaryTimes.com
         url: 'http://feeds.feedburner.com/navy-times/news/your-navy'
     }, {
-        name: 'Veterans',                                                        // From MilitaryTimes.com
+        name: 'Veterans',                                                       // From MilitaryTimes.com
         url: 'http://feeds.feedburner.com/military-times/veterans'
     }, {
-        name: 'Military Family',                                    // From Military.com
+        name: 'Military Family',                                                // From Military.com
         url: 'https://www.military.com/rss-feeds/content?channel=spouse+and+family&type=evergreen,news'
     }, {
-        name: 'Transition',                                          // From MilitaryTimes.com
+        name: 'Transition',                                                     // From MilitaryTimes.com
         url: 'http://feeds.feedburner.com/military-times/education-transition'
     }
 ];
 
-const body = document.querySelector('body');                         // Better?
+const body = document.querySelector('body');
 const feed = document.querySelector('.feed');
-const menu = document.querySelector('.menu-icon-link');
 let feedList = $('.feed-list');
 
 

@@ -27,6 +27,8 @@ $(function() {
 $(function() {
   describe('The menu', function() {                                             // correct.
 
+    const menu = document.querySelector('.menu-icon-link');
+
     it('is hidden', function() {                                                // correct.
       expect($('body').hasClass('menu-hidden')).toBe(true);                     // when page loads, menu is hidden.
     });
@@ -43,7 +45,7 @@ $(function() {
 
 $(function() {
   describe('Initial Entries', function() {                                      // correct.
-    beforeEach(function loadFeed(done) {                                        // Before running test, ensure loadFeed() is complete.
+    beforeEach(function(done) {                                                 // Before running test, ensure loadFeed() is complete.
       done();
     });
 
@@ -56,24 +58,20 @@ $(function() {
 
 
 $(function() {
-  let loadA = [];
-  let loadB = [];
-
   describe('New Feed Selection', () => {
-    beforeEach(done => {                                                        // Works - don't touch!!
-      let fE = feed.children;                                                   // Works don't touch!
+    let loadA = [];                                                             // declare variables in describe to obtain correct scope. Use let so value can be reassigned later.
+    let loadB = [];
 
-      loadFeed(1);
-      console.log(fE);                                                          // Works!  length is 25 for all 4 feeds.  Checked each individually.
-      Array.from(fE).forEach(entry =>
-      loadA.push(entry.textContent));
+    beforeEach( () => {
 
-      loadFeed(3, done);
-      Array.from(fE).forEach(entry =>
-      loadB.push(entry.textContent));
-      });
+      loadFeed(1, () => {                                                       // I like my feed to finish with index 0.  Therefore, I ran index 1 and then ran index 0.
+        loadA = $('feed').textContent;                                          // comparing the textContent of the two feeds. 
+        loadFeed(0, () => {
+          loadB = $('feed').textContent;
+        })});
+        });
 
-    it('verify content is new', () =>
-      expect(loadA === loadB).toBe(false));                                     // verify old feed is not equal to new feed.
+    it('verify content is new', () => {
+      expect(loadA === loadB).toBe(false)});                                     // verify old feed is not equal to new feed.
   });
 }());
