@@ -50,7 +50,7 @@ $(function() {
     });
 
     it('status of feed', function() {                                           // correct.
-      expect($('feed.entry')).not.toBe(0);                                      // array of feed entries should not be empty.
+      expect($('feed.entry.length')).not.toBe(0);                                      // array of feed entries should not be empty.
     });
   });
 }());                                                                           // Suite 3 complete!
@@ -65,11 +65,12 @@ $(function() {
     beforeEach( () => {
 
       loadFeed(1, () => {                                                       // I like my feed to finish with index 0.  Therefore, I ran index 1 and then ran index 0.
-        loadA = $('feed').textContent;                                          // comparing the textContent of the two feeds. 
+        loadA = $('feed').textContent;                                          // comparing the textContent of the two feeds.
         loadFeed(0, () => {
           loadB = $('feed').textContent;
-        })});
         });
+      });
+    });
 
     it('verify content is new', () => {
       expect(loadA === loadB).toBe(false)});                                     // verify old feed is not equal to new feed.
